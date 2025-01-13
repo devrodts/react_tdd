@@ -23,7 +23,9 @@ export class RemoteAuthentication {
             case HttpStatusCode.ok: break
             case HttpStatusCode.unauthorized: throw new InvalidCredentialsError()
             case HttpStatusCode.badRequest: throw new UnexpectedError()
-            default: return Promise.resolve()
+            case HttpStatusCode.notFound: throw new UnexpectedError()
+            case HttpStatusCode.serverError: throw new UnexpectedError()
+            default: Promise.resolve()
         }
     }
 
