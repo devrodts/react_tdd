@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
+        "target": "es6",
         "module": "CommonJS",
         "outDir": "./dist",
         // "strict": true,
         "esModuleInterop": true,
-        "skipLibCheck": true,
+        // "skipLibCheck": true,
         "jsx": "react",
         "rootDir": "src",
         "baseUrl": "src",
@@ -13,11 +13,11 @@
             "@/*": ["*"]
         },
         "allowJs":true,
-        "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true,
+        // "allowSyntheticDefaultImports": true,
+        // "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "noEmit": true,
+        // "noEmit": true,
     },
     "include": ["src/**/*.ts", "src/**/*.tsx"],
 }
